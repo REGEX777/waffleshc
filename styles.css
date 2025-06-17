@@ -1,0 +1,200 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f900;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006bce;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.minion-gallery {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#main-minion {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.minion-info {
+    width: 300px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.minion-selector {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.minion-selector button {
+    background-color: #006bce;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.minion-translator {
+    background-color: #e8f4fc;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+#human-text {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.translation-box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 50px;
+    margin-bottom: 1rem;
+}
+ 
+.color-changer {
+    background-color: #ffcc00;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#color-box {
+    padding: 2rem;
+    margin: 1rem auto;
+    width: 200px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.minion-yellow {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.minion-blue {
+    background-color: #006bce;
+    color: white;
+}
+
+.minion-purple {
+    background-color: #800080;
+    color: white;
+}
+ 
+.game-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-stats {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1rem;
+}
+
+#game-container {
+    width: 600px;
+    height: 400px;
+    background-color: #e8f4fc;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#player-minion {
+    width: 80px;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.banana {
+    width: 40px;
+    position: absolute;
+    animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+.minion-dance {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#dancing-minion {
+    width: 150px;
+    margin: 1rem;
+}
+
+.dancing {
+    animation: dance 0.5s infinite alternate;
+}
+
+@keyframes dance {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #006bce;
+    color: white;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catch thge banana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minion Banana Collector</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="banana-game.html">Banana Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="game-intro">
+            <h2>Catch the bananas if you can!</h2>
+            <p>Click on the bananas and help the minions collect them before they disappear</p>
+            <div class="game-stats">
+                <p>Bananas Collected: <span id="banana-count">0</span></p>
+                <p>Time Left: <span id="time-left">30</span>s</p>
+            </div>
+            <button onclick="startGame()" id="start-button">Start the Game</button>
+        </section>
+
+        <section class="game-area">
+            <div id="game-container">
+            </div>
+        </section>
+
+        <section class="minion-dance">
+            <h2>Celebration Dance</h2>
+            <p>Make the minions dance when you win!</p>
+            <div id="dance-container">
+                <img src="https://freepngimg.com/thumb/minions/111009-minion-photos-kevin-download-hd-thumb.png" alt="Dancing Minion" id="dancing-minion">
+            </div>
+            <audio id="bananasong" src="./audios/banana-song2.mp3"></audio>
+            <button onclick="makeDance()">Dance Party!</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Minion | Hacklub Uh!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

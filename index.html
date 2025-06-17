@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i like minion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minionms World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="banana-game.html">Banana Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="minion-gallery">
+            <h2>Say hello to the minions</h2>
+            <div class="gallery-container">
+                <img src="https://gallery.yopriceville.com/downloadfullsize/send/8470" alt="Kevin the Minion" id="main-minion">
+                <div class="minion-info" id="minion-bio">
+                    click the buttons to learn more about them!
+                </div>
+            </div>
+            <div class="minion-selector">
+                <button onclick="showMinion('kevin')">Kevin</button>
+                <button onclick="showMinion('stuart')">Stuart</button>
+                <button onclick="showMinion('bob')">Bob</button>
+            </div>
+        </section>
+
+        <section class="minion-translator">
+            <h2>Minion Translator (BANANAAAAA)</h2>
+            <input type="text" id="human-text" placeholder="Type English here..." oninput="translateToMinion()">
+            <div class="translation-box">
+                <p id="minion-text">Bello! (Hello!)</p>
+            </div>
+            <button onclick="speakMinion()">minion hello!</button>
+            <audio id="minion-audio" src="./audios/minionhello.mp3"></audio>
+            <audio id="bananaaudio" src="./audios/banana_8.mp3"></audio>
+        </section>
+
+        <section class="color-changer">
+            <h2>Colorizerrr</h2>
+            <p>Cus why not</p>
+            <div id="color-box" class="minion-yellow">
+                Bananaaaa!
+            </div>
+            <button onclick="changeMinionColor()">Change Color</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Minion | Hacklub Uh!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
